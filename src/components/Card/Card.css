@@ -1,0 +1,81 @@
+.card {
+    background-color: rgba(0, 0, 0, 0.653);
+    height: 100px;
+    width: 90%;
+    max-width: 300px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0), 2px 2px 10px rgb(31, 220, 230);
+    flex-shrink: 0;
+    padding: 10px;
+}
+
+.card .hovercard img{
+    width: 30%;
+}
+
+#mern img{
+width: 80%;
+}
+
+#weather img{
+width: 40%;
+height: 100%;
+}
+
+#chatgpt img{
+width: 40%;
+height: 100%;
+}
+
+
+#voice img{
+width: 30%;
+height: 90%;
+}
+
+#dic img{
+width: 35%;
+height: 100%;
+}
+
+#game img{
+width: 60%;
+height: 100%;
+padding-top: 30px;
+}
+
+.card h1{
+    background: linear-gradient(to right,rgb(31, 220, 230),white);
+    background-clip: text;
+    color: transparent;
+    font-size: 2em;
+}
+
+.card:hover {
+    overflow: none;
+    box-shadow: 2px 2px 10px rgb(31, 220, 230), 2px 2px 10px rgb(31, 220, 230);
+    .hovercard {
+        transform: translateY(0);
+    }
+}
+
+
+.hovercard {
+    background-color: aliceblue;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(150%);
+    transition: all 0.3s ease;
+    background: linear-gradient(to top,rgb(24, 135, 141),rgba(0, 0, 0));
+}

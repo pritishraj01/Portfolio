@@ -1,0 +1,102 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    background: linear-gradient(to right,black,rgba(26, 28, 31, 0.333));
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    color: aliceblue;
+}
+
+nav h1{
+    font-size: 30px;
+    background: linear-gradient(to right,rgb(31, 220, 230),white);
+    background-clip: text;
+    color: transparent;
+}
+
+.active{
+    color: rgb(31, 220, 230);
+    border-bottom: 2px solid rgb(31, 220, 230);
+}
+
+nav a:hover{
+    cursor: pointer;
+}
+
+.ham{
+    width: 40px;
+    height: 2px;
+    background-color: aliceblue;
+    transition: all 0.4s ease-out;
+}
+
+.hamberger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-direction: column;
+    display: none;
+}
+
+
+.mobileMenu{
+   position: absolute;
+   top: 100px;
+   right: 0px;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   transform: translateX(100%);
+   transition: all 0.5s ease;
+   background-color: rgba(26, 28, 31, 0.493);
+   backdrop-filter: blur(7px);
+   gap: 40px;
+}
+
+.activemobile{
+    transform: translateX(0%);
+}
+
+.activeham .ham:nth-child(1){
+    transform: rotate(45deg);
+    position: relative;
+    top: 11px;
+    transition: all 0.4s ease;
+}
+
+.activeham .ham:nth-child(2){
+    opacity: 0;
+}
+
+.activeham .ham:nth-child(3){
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+    transition: all 0.4s ease;
+}
+
+@media (max-width:750px) {
+    .desktopMenu{
+        display: none;
+    }
+    .hamberger{
+        display: flex;
+    }
+}

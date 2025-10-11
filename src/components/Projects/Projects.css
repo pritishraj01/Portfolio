@@ -1,0 +1,56 @@
+#projects{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects h2{
+    background: linear-gradient(to right, rgb(227, 75, 100), rgba(227, 75, 100, 0.715));
+    background-clip: text;
+    color: transparent;
+    font-size: 4vmax;
+}
+
+#projects h1{
+    background: linear-gradient(to right,rgb(31, 220, 230),white);
+    background-clip: text;
+    color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 2vmax;
+}
+
+
+.slider{
+    display: flex;
+    align-items: center;
+    height: 200px;
+    width: 90%;
+    gap: 30px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    padding: 0px 20px;
+}
+
+.slider a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    flex-shrink: 0;
+    height: 100px;
+    width: 90%;
+    max-width: 300px;
+}
+
+
+@media (max-width:750px) {
+    #projects h2{
+        font-size: 1.4em;
+    }
+}
+
+
