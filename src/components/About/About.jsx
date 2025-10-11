@@ -22,9 +22,8 @@ function About() {
         trigger: '.circle',
         scroller: 'body',
         scrub: 2,
-        markers: true,
         start: "top 50%",
-        end: "top 20%"
+        end: "top 10%"
       }
     })
     gsap.from('.line', {
@@ -36,9 +35,8 @@ function About() {
         trigger: '.line',
         scroller: 'body',
         scrub: 2,
-        markers: true,
-        start: "top 60%",
-        end: "top 30%"
+        start: "top 50%",
+        end: "top 20%"
       }
     })
   })
