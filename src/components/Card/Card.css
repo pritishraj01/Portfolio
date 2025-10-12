@@ -23,7 +23,7 @@
 width: 80%;
 }
 
-#weather img{
+#linkedin img{
 width: 40%;
 height: 100%;
 }
@@ -31,23 +31,6 @@ height: 100%;
 #chatgpt img{
 width: 40%;
 height: 100%;
-}
-
-
-#voice img{
-width: 30%;
-height: 90%;
-}
-
-#dic img{
-width: 35%;
-height: 100%;
-}
-
-#game img{
-width: 60%;
-height: 100%;
-padding-top: 30px;
 }
 
 .card h1{
