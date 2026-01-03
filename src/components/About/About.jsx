@@ -72,7 +72,7 @@ function About() {
           <div className="skills">
             <h1>SKILLS</h1>
             <ul>
-              <li>FRONTEND WEB DEV</li>
+              <li>MERN STACK WEB DEV</li>
             </ul>
           </div>
         </div>
